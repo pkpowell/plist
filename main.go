@@ -12,10 +12,28 @@ const data = `<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>typekey</key>
-	<string>A</string>
-	<key>typeAkey</key>
-	<string>VALUE-A</string>
+	<key>Disabled</key>
+	<true/>
+	<key>KeepAlive</key>
+	<true/>
+	<key>Label</key>
+	<string>AdGuardHome</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/Applications/AdGuardHome/AdGuardHome</string>
+		<string>-s</string>
+		<string>run</string>
+	</array>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>SessionCreate</key>
+	<false/>
+	<key>StandardErrorPath</key>
+	<string>/var/log/AdGuardHome.stderr.log</string>
+	<key>StandardOutPath</key>
+	<string>/var/log/AdGuardHome.stdout.log</string>
+	<key>WorkingDirectory</key>
+	<string>/Applications/AdGuardHome</string>
 </dict>
 </plist>`
 
